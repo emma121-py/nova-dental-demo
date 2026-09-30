@@ -1,3 +1,6 @@
+import Faq from "@/components/faq";
+import Contact from "@/components/contact";
+import Closing from "@/components/closing";
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Treatments from "@/components/treatments";
@@ -14,7 +17,11 @@ export default function Home() {
         <Treatments />
         <WhyUs />
         <Specialists />
+        <Faq />
+        <Contact />
       </main>
+      <Closing />
     </>
   );
 }
+
