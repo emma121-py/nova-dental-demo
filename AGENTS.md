@@ -10,3 +10,4 @@
 - Commits cortos y descriptivos solo en hitos razonables. Actualizar STATUS solo ante avances significativos.
 
 Consultar solo lo necesario: docs/PROJECT.md = producto y alcance; docs/DESIGN.md = sistema visual; docs/STATUS.md = estado actual; docs/DECISIONS.md = decisiones importantes. No leer todos por rutina.
+- No generar imágenes ni recursos visuales por cuenta propia. Solicitar al propietario descripción, proporción y resolución; usar placeholders simples hasta recibir sus archivos.
