@@ -1,13 +1,11 @@
 # Estado
 ## Terminado
-Navbar y Hero con identidad propia, Inter local e imagen IA inicial optimizada (conservada por indicación del propietario). Desktop 1440px y móvil 390/320px revisados: sin overflow ni errores de consola; CTAs, cierre del aviso y enlaces verificados. Lint y build con tipos OK. Identidad Git local configurada para Emma; primer commit de base e interfaz.
+Navbar y Hero conservados. Tratamientos (4), Por qué elegirnos (3 motivos) y Especialistas (3 perfiles ficticios con placeholders) implementados. Bloque revisado a 1440px y 390px: sin overflow ni errores de consola; TypeScript OK. Git local: Emma.
 ## En progreso
 Ninguno.
 ## Pendiente próximo
-Definir número autorizado de WhatsApp; luego diseñar Tratamientos. Trasladar Desarrollo al Escritorio cuando se resuelva acceso.
+Recibir 3 retratos 4:5 (1200×1500px) y número autorizado de WhatsApp. Continuar con FAQ y contacto. Trasladar al Escritorio cuando se resuelva acceso.
 ## Problemas conocidos
-CTA abre aviso de demo (sin número real). Proyecto sigue en outputs/Desarrollo; Escritorio bloqueado en sesión inicial. ESLint 9 por compatibilidad, fuera de soporte.
+WhatsApp muestra aviso de demo. Proyecto en outputs/Desarrollo; acceso al Escritorio bloqueado en sesión inicial. ESLint 9 por compatibilidad, fuera de soporte.
 ## Ejecución
-Desde el proyecto: `..\..\recursos\npm.cmd run dev`; comprobar con `run lint` y `run build`. npm portable en recursos; Node 24. Vista actual en localhost:3000 con servidor de producción.
-
-
+`..\..\recursos\npm.cmd run dev`; Node 24. Última revisión en localhost:3002 (`run dev -- --port 3002`); no asumir servidor activo.

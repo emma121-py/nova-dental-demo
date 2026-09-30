@@ -70,3 +70,43 @@ figcaption { display: flex; justify-content: space-between; gap: 16px; padding-t
 @media (max-width: 380px) { .wordmark { font-size: 21px; } .booking-compact { font-size: 12px; padding-inline: 10px; gap: 8px; } .eyebrow { font-size: 9px; } h1 { font-size: 46px; } .hero-image-wrap { height: 350px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .booking-button { transition: none; } }
 
+/* Content sections share the established typography and palette. */
+.content-section { padding-block: 100px; }
+.section-heading { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 64px; align-items: end; margin-bottom: 56px; }
+.content-section h2, .why-section h2 { font-size: clamp(36px, 3.6vw, 54px); line-height: 1.1; letter-spacing: -0.045em; font-weight: 500; margin-top: 22px; }
+.section-intro { font-size: 17px; line-height: 1.75; color: var(--color-muted); max-width: 410px; }
+.treatments-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+.treatment { border-top: 1px solid #183c3833; padding-top: 24px; display: flex; flex-direction: column; align-items: flex-start; }
+.item-number { color: var(--color-brand); font-size: 12px; letter-spacing: 1px; }
+.content-section h3, .why-section h3 { font-size: 23px; line-height: 1.25; font-weight: 500; letter-spacing: -0.6px; }
+.treatment h3 { margin-block: 32px 16px; }
+.treatment p, .reason p, .specialist-description { color: var(--color-muted); font-size: 15px; line-height: 1.75; }
+.treatment-detail { margin-top: auto; padding-top: 28px; font-size: 11px; color: var(--color-brand); line-height: 1.5; }
+.section-note { margin-top: 36px; font-size: 11px; line-height: 1.7; color: var(--color-muted); }
+.why-section { padding-block: 96px; background: #eaf0e9; }
+.why-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; }
+.why-heading .section-intro { margin-top: 28px; max-width: 355px; }
+.reason { display: grid; grid-template-columns: 28px 1fr; gap: 22px; padding-block: 28px; border-top: 1px solid #183c3826; }
+.reason:first-child { padding-top: 0; border-top: 0; }
+.reason:last-child { padding-bottom: 0; }
+.reason .item-number { padding-top: 5px; }
+.reason p { margin-top: 12px; max-width: 390px; }
+.specialists-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.portrait-placeholder { aspect-ratio: 4 / 5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: #e5e9e1; border-radius: 8px; color: var(--color-muted); font-size: 14px; }
+.portrait-placeholder small { font-size: 11px; }
+.profile-label { font-size: 9px; letter-spacing: 1.2px; color: var(--color-muted); margin-block: 24px 10px; }
+.specialist-area { margin-top: 8px; font-size: 13px; color: var(--color-brand); line-height: 1.5; }
+.specialist-description { margin-top: 16px; max-width: 330px; }
+@media (max-width: 1100px) { .treatments-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; } .why-layout { gap: 48px; } .specialists-grid { gap: 24px; } }
+@media (max-width: 800px) {
+  .content-section { padding-block: 64px; }
+  .section-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 36px; }
+  .section-intro { font-size: 16px; }
+  .why-section { padding-block: 64px; }
+  .why-layout { grid-template-columns: 1fr; gap: 40px; }
+  .why-heading .section-intro { max-width: 410px; margin-top: 24px; }
+  .specialists-grid { grid-template-columns: 1fr; gap: 44px; }
+  .portrait-placeholder { max-height: 470px; }
+  .specialist-description { max-width: 410px; }
+}
+@media (max-width: 480px) { .treatments-grid { grid-template-columns: 1fr; gap: 32px; } .treatment h3 { margin-top: 20px; } .treatment-detail { padding-top: 18px; } }
